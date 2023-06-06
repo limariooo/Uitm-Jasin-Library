@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1c441c;
+    color: white;
+    }
+
+nav{
+        display:inline;
+    }
+
+a{
+        text-decoration: none;
+        color: rgb(251, 250, 250);
+        display:inline;
+        padding: 10px;
+    }
+main{
+        background-image:url('bookShelf.jpg');
+        background-size:cover;
+        background-position:center;
+        height: 72vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:0 400px;
+}
+.form_container {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        background:#cafdca;
+        padding: 8px;
+        border-radius: 10px;
+}  
+p {
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom:10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  footer{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1c441c;
+    color: white;
+}
