@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiTM Jasin's Library</title>
+</head>
+<link rel="stylesheet" href="searchBook.css">
+<body>
+    <header>
+        <img src="image/logo uitm.webp" alt="logo" width="150" height="90">
+
+        <nav> 
+            <a href="home.html">Home</a>
+            <a href="bookcart.html">Book Cart</a>
+        </nav>
+    </header>
+    <fieldset id="book">
+        <fieldset id="title">
+            <h3 class="main">BIG DATA REVOLUTION</h1>
+                <div id="openBook">
+                    <button onclick="open()">Open</button>
+                </div>
+        </fieldset>
+    </fieldset>
+    <fieldset id="book">
+        <fieldset id="title">
+            <h3 class="main">SYSTEM ANALYSIS</h1>
+                <div id="openBook">
+                    <button onclick="open()">Open</button>
+                </div>
+        </fieldset>
+    </fieldset>
+    <fieldset id="book">
+        <fieldset id="title">
+            <h3 class="main">SYSTEM DESIGN AND IMPLEMENTATION</h1>
+                <div id="openBook">
+                    <button onclick="open()">Open</button>
+                </div>
+        </fieldset>
+    </fieldset>
+    <script>
+        function open(){
+            window.location.href="viewBook.html";
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiTM Jasin's Library</title>
+</head>
+<link rel="stylesheet" href="bookCart.css">
+<body>
+    <header>
+        <img src="image/logo uitm.webp" alt="logo" width="150" height="90">
+
+        <h1>BOOK CART</h1>
+        <nav> 
+            <a href="home.html">Home</a>
+        </nav>
+    </header>
+
+    <fieldset id="book">
+        <fieldset id="title">
+            <h3 class="main">BIG DATA REVOLUTION</h1>
+                <div id="borrowBook">
+                    <button onclick="borrow()">Borrow</button>
+                </div>
+        </fieldset>
+    
+        <script>
+            function borrow(){
+                window.location.href="bookBorrow.html";
+            }
+        </script>
+    
+</body>
+</html>

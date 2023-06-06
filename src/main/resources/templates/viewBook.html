@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiTM Jasin's Library</title>
+</head>
+<link rel="stylesheet" href="viewBook.css">
+<body>
+    <header>
+        <img src="image/logo uitm.webp" alt="logo" width="150" height="90">
+        <nav> 
+            <a href="home.html">Home</a>
+            <a href="bookcart.html">Book Cart</a>
+        </nav>
+    </header>
+
+    <fieldset id="book">
+        <fieldset id="title">
+            <h2 class="main">BIG DATA REVOLUTION</h2>
+            <p>Big Data: Using SMART Big Data, Analytics and Metrics To Make Better Decisions. </p>
+            <p>Author:Bernard Marr</p>
+            <p>Genre:System Data</p>
+            <p>Publisher:Smart Data</p>
+            <p>Amount Of Available:</p>
+            <div id="click">
+                <button onclick="add()">Add To Cart</button>
+                <button onclick="borrow()">Borrow</button>
+            </div>
+        </fieldset>
+    </fieldset>
+    <script>
+        function add(){
+            window.location.href="bookCart.html";
+        }
+        function borrow(){
+            window.location.href="bookBorrow.html";
+        }
+    </script>
+    
+</body>
+</html>

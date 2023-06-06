@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1c441c;
+    color: white;
+    }
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display:inline;
+    padding: 10px;
+    margin-left: 15px;
+} 
+
+body{
+    background-image: url("image/bookshelf.jpg");
+    background-size: cover;
+}
+
+#adFine{
+    border-radius: 10px;
+    background-color:#f2f9ee;
+    margin-top: 60px;
+    margin-left: 420px;
+    width: 500px;
+    height: 455px;
+}
+
+.admin{
+    color:black;
+    font-weight: 800;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    margin-left: 100px;
+}
+
+#Create{
+    margin-top: 18px;
+    margin-left: 35px;
+    width: 425px;
+    height: 316px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.studentId, .name,.quantity,.date,.amount{ 
+    margin-left: 100px;
+}
+
+input[type="text"], input[type="date"], input[type="number"]{
+    margin-left: 100px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    border-color: black;
+    width: 240px;
+    height: 23px;
+}
+
+.btn{
+    padding: 5px 40px;
+    background:#406b40;
+    border-color: black;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-left: 200px;
+}
+.btn:hover{
+    background-color: #8FBC8F;
+}
+
+.btn:focus{
+    background-color: #85ad85;
+    outline: none;
+}
