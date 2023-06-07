@@ -54,7 +54,13 @@
                               </div>
                            </div>
                            <div class="text-center">
-                              <input type="submit" value="LogIn" onclick="location.href='book_details.html'">
+                             <button onclick="goToPage()">Go to Page</button>
+
+                              <script>
+                                function goToPage() {
+                                  window.location.href = "book_details.html";
+                                }
+                                </script>
 
                            </div>
                         </div>
