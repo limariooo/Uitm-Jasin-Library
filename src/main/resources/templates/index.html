@@ -1,94 +1,79 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
-<body>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="theme-color" content="#000000">
 
-<div class="jumbotron text-center">
-    <div class="container">
-        <a href="/" class="lang-logo">
-            <img alt="" src="/lang-logo.png">
-        </a>
-        <h1>Getting Started with Java on Heroku</h1>
-        <p>This is a sample Java application deployed to Heroku. It's a reasonably simple app - but a good foundation
-            for understanding how to get the most out of the Heroku platform.</p>
-        <a type="button" class="btn btn-lg btn-default"
-           href="https://devcenter.heroku.com/articles/getting-started-with-java"><span
-                class="glyphicon glyphicon-flash"></span> Getting Started with Java</a>
-        <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/java-getting-started"><span
-                class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-    </div>
-</div>
+      <link rel="shortcut icon" href="favicon.ico">
+      <!-- bootstrap v4.1.1 -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <!-- font awesome(for icons) -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <!-- lato font(from google fonts) -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+      <link href="css/custom-style.css" rel="stylesheet">
+      <title>Book Rental App</title>
+   </head>
+   <body class="main-section">
+      <div class="container">
+      <div class="row">
+         <div class="col-md-12 text-center user-login-header">
+            <h1>WELCOME TO UiTM Jasin Library</h1>
+         </div>
+      </div>
+      <div class="row justify-content-center user-login-header">
+         <div class="col-12 col-md-8 col-lg-6 pb-5">
+            <!--Form with header-->
+               <div class="card border-primary rounded-0">
+                  <div class="card-header p-0">
+                     <div class="bg-info text-white text-center py-2">
+                        <h3><i class="fas fa-sign-in-alt"></i> Login Form</h3>
+                        <p class="m-0">*********************</p>
+                     </div>
+                  </div>
+                  <div class="card-body p-3">
+                     <div class="text-center">
+                        <div class="user-login-box">
+                           <!--Body-->
+                           <div class="form-group">
+                              <div class="input-group mb-2">
+                                 <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                 </div>
+                                 <input type="text" class="form-control" id="email" name="email" placeholder="xxx@gmail.com" required="required" autofocus="autofocus">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="input-group mb-2">
+                                 <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                 </div>
+                                 <input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">
+                              </div>
+                           </div>
+                           <div class="text-center">
+                              <input type="submit" value="LogIn" onclick="location.href='book_details.html'">
 
-<div class="container">
-    <div class="alert alert-info text-center" role="alert">
-        To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a
-            href="https://devcenter.heroku.com/articles/getting-started-with-java" class="alert-link">Getting Started
-        with Java on Heroku</a> tutorial.
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-md-6">
-            <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-            <ul>
-                <li>This app was deployed to Heroku, either using Git or by using <a
-                        href="https://github.com/heroku/java-getting-started">Heroku Button</a> on the repository.
-                </li>
-
-                <li>When Heroku received the source code, it fetched all the dependencies in the <a
-                        href="https://github.com/heroku/java-getting-started/blob/main/pom.xml">pom.xml</a>, creating a
-                    slug.
-                </li>
-                <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in
-                    which the slug can be mounted and executed.
-                </li>
-                <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on
-                    services</a>, from the Dashboard or CLI.
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-            <ul>
-                <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting
-                    Started</a> guide, then please head back to the tutorial and follow the next steps!
-                </li>
-                <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-                <li>
-                    <ul>
-                        <li><code>git clone https://github.com/heroku/java-getting-started.git</code> - this will create
-                            a
-                            local copy of the source code for the app
-                        </li>
-                        <li><code>cd java-getting-started</code> - change directory into the local source code
-                            repository
-                        </li>
-                        <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the
-                            repository
-                        </li>
-                        <li>You'll now be set up to run the app locally, or <a
-                                href="https://devcenter.heroku.com/articles/getting-started-with-java#push-local-changes">deploy
-                            changes</a> to Heroku
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-            <ul>
-                <li><a href="https://www.heroku.com/home">Heroku</a></li>
-                <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-                <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java
-                    on Heroku</a></li>
-                <li><a href="https://devcenter.heroku.com/articles/deploying-java">Deploying Java Apps on Heroku</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="alert alert-info text-center" role="alert">
-        Please do work through the Getting Started guide, even if you do know how to build such an application. The
-        guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order
-        to build and deploy your own apps.
-    </div>
-</div>
-
-</body>
+                           </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 last-part">
+                           <p style="color:black">Not registered?<a style="color:rgb(248, 7, 196)" href="register.html"> Create an account</a></p>
+                        </div>
+                     </div>
+                  </div>
+            <!--Form with header-->
+            </div>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript-->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="js/notify.min.js"></script>
+      <script src="js/index.js"></script>
+   </body>
 </html>
